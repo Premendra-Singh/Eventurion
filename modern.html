@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eventurion — Modern India</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="modern.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page">
+<header class="hero"><nav class="era-nav"><a class="" href="index.html">Home</a><a class="" href="ancient.html">Ancient India</a><a class="" href="medieval.html">Medieval India</a><a class="active" href="modern.html">Modern India</a><a href="feedback.html">Feedback</a></nav>
+<div class="hero-glow"></div>
+<div class="hero-content">
+<div class="brand"><a href="index.html">EVENTURION</a></div>
+<div class="hero-copy">
+<h1>Modern India</h1>
+<p class="subtitle">A Journey of Freedom and Transformation</p>
+<p class="intro">From the spread of Company rule in the early 1800s and the uprising of 1857, through the struggle for independence, to the birth of the Republic, economic reform and space exploration, discover the events that shaped modern India.</p>
+</div>
+</div>
+<div class="monument-wrap">
+<img alt="Mahatma Gandhi" class="monument" src="assets/modern-gandhi.jpg"/>
+</div>
+</header>
+<section class="timeline-section tl-bar" id="tl-bar" aria-label="Timeline of Modern India, 1800 to today">
+  <div class="tl-head">
+    <h2>Timeline of Modern India <span>1800 – Today</span></h2>
+    <div class="tl-controls">
+      <button class="tl-btn" id="tl-prev" type="button" aria-label="Previous event">&#8249;</button>
+      <button class="tl-btn tl-play" id="tl-play" type="button" aria-pressed="false">&#9654; Play</button>
+      <button class="tl-btn" id="tl-next" type="button" aria-label="Next event">&#8250;</button>
+    </div>
+  </div>
+  <div class="tl-stage" id="tl-stage">
+    <!-- label that follows the moving dot -->
+    <div class="tl-bubble" id="tl-bubble"><time id="tl-year">1818</time><b id="tl-title"></b></div>
+    <!-- rule periods; data-from / data-to are years, JS turns them into % of the line -->
+    <div class="tl-bands">
+      <div class="tl-band" data-from="1800" data-to="1858" style="--c:rgba(190,80,60,.55)"><span>Company rule</span></div>
+      <div class="tl-band" data-from="1858" data-to="1947" style="--c:rgba(70,120,190,.55)"><span>British Crown rule</span></div>
+      <div class="tl-band" data-from="1947" data-to="now" style="--c:rgba(231,189,36,.5)"><span>Independent India</span></div>
+    </div>
+    <!-- THE single timeline: every small dot is an event, the big gold dot is the one that moves -->
+    <div class="tl-line" id="tl-line">
+      <div class="tl-fill" id="tl-fill"></div>
+        <button class="tl-dot" type="button" data-year="1818" data-chapter="1" data-title="Company power dominant after Maratha defeat" title="1818 · Company power dominant after Maratha defeat" aria-label="1818: Company power dominant after Maratha defeat"></button>
+        <button class="tl-dot" type="button" data-year="1829" data-chapter="1" data-title="Sati abolished" title="1829 · Sati abolished" aria-label="1829: Sati abolished"></button>
+        <button class="tl-dot" type="button" data-year="1835" data-chapter="1" data-title="English education adopted" title="1835 · English education adopted" aria-label="1835: English education adopted"></button>
+        <button class="tl-dot" type="button" data-year="1853" data-chapter="1" data-title="First railway: Bombay–Thane" title="1853 · First railway: Bombay–Thane" aria-label="1853: First railway: Bombay–Thane"></button>
+        <button class="tl-dot" type="button" data-year="1857" data-chapter="2" data-title="Revolt of 1857" title="1857 · Revolt of 1857" aria-label="1857: Revolt of 1857"></button>
+        <button class="tl-dot" type="button" data-year="1858" data-chapter="2" data-title="Crown takes over from Company" title="1858 · Crown takes over from Company" aria-label="1858: Crown takes over from Company"></button>
+        <button class="tl-dot" type="button" data-year="1885" data-chapter="3" data-title="Indian National Congress founded" title="1885 · Indian National Congress founded" aria-label="1885: Indian National Congress founded"></button>
+        <button class="tl-dot" type="button" data-year="1905" data-chapter="3" data-title="Partition of Bengal &amp; Swadeshi" title="1905 · Partition of Bengal &amp; Swadeshi" aria-label="1905: Partition of Bengal &amp; Swadeshi"></button>
+        <button class="tl-dot" type="button" data-year="1915" data-chapter="3" data-title="Gandhi returns to India" title="1915 · Gandhi returns to India" aria-label="1915: Gandhi returns to India"></button>
+        <button class="tl-dot" type="button" data-year="1919" data-chapter="3" data-title="Jallianwala Bagh massacre" title="1919 · Jallianwala Bagh massacre" aria-label="1919: Jallianwala Bagh massacre"></button>
+        <button class="tl-dot" type="button" data-year="1920" data-chapter="4" data-title="Non-Cooperation Movement" title="1920 · Non-Cooperation Movement" aria-label="1920: Non-Cooperation Movement"></button>
+        <button class="tl-dot" type="button" data-year="1930" data-chapter="4" data-title="Salt March" title="1930 · Salt March" aria-label="1930: Salt March"></button>
+        <button class="tl-dot" type="button" data-year="1942" data-chapter="5" data-title="Quit India Movement" title="1942 · Quit India Movement" aria-label="1942: Quit India Movement"></button>
+        <button class="tl-dot" type="button" data-year="1947" data-chapter="5" data-title="Independence" title="1947 · Independence" aria-label="1947: Independence"></button>
+        <button class="tl-dot" type="button" data-year="1950" data-chapter="6" data-title="Republic of India" title="1950 · Republic of India" aria-label="1950: Republic of India"></button>
+        <button class="tl-dot" type="button" data-year="1966" data-chapter="7" data-title="Green Revolution begins" title="1966 · Green Revolution begins" aria-label="1966: Green Revolution begins"></button>
+        <button class="tl-dot" type="button" data-year="1969" data-chapter="7" data-title="ISRO founded" title="1969 · ISRO founded" aria-label="1969: ISRO founded"></button>
+        <button class="tl-dot" type="button" data-year="1975" data-chapter="7" data-title="Aryabhata satellite" title="1975 · Aryabhata satellite" aria-label="1975: Aryabhata satellite"></button>
+        <button class="tl-dot" type="button" data-year="1991" data-chapter="8" data-title="Economic reforms" title="1991 · Economic reforms" aria-label="1991: Economic reforms"></button>
+        <button class="tl-dot" type="button" data-year="2009" data-chapter="9" data-title="UIDAI set up (Aadhaar)" title="2009 · UIDAI set up (Aadhaar)" aria-label="2009: UIDAI set up (Aadhaar)"></button>
+        <button class="tl-dot" type="button" data-year="2014" data-chapter="10" data-title="Mangalyaan reaches Mars" title="2014 · Mangalyaan reaches Mars" aria-label="2014: Mangalyaan reaches Mars"></button>
+        <button class="tl-dot" type="button" data-year="2015" data-chapter="9" data-title="Digital India launched" title="2015 · Digital India launched" aria-label="2015: Digital India launched"></button>
+        <button class="tl-dot" type="button" data-year="2016" data-chapter="9" data-title="UPI launched" title="2016 · UPI launched" aria-label="2016: UPI launched"></button>
+        <button class="tl-dot" type="button" data-year="2023" data-chapter="10" data-title="Chandrayaan-3 lands near Moon's south pole" title="2023 · Chandrayaan-3 lands near Moon's south pole" aria-label="2023: Chandrayaan-3 lands near Moon's south pole"></button>
+      <div class="tl-playhead" id="tl-playhead" tabindex="0" role="slider" aria-label="Year" aria-valuemin="1800"></div>
+    </div>
+    <div class="tl-scale" id="tl-scale"></div>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="cards"><article class="card" id="chapter-1" data-year="1818"><div class="card-title"><span>1</span><h3>Company Rule &amp; Early Reform</h3></div><div class="date">1800–1856</div><div class="card-content"><p>British East India Company power spread across the subcontinent, while changes in education, social law and transport began to reshape society.</p><img alt="Company Rule &amp; Early Reform" loading="lazy" src="assets/modern-hero.jpg"/></div><a href="#chapter-1">View details ↑</a></article><article class="card" id="chapter-2" data-year="1857"><div class="card-title"><span>2</span><h3>Revolt of 1857</h3></div><div class="date">1857–1858</div><div class="card-content"><p>A major uprising against East India Company rule that led to the British Crown taking direct control of India.</p><img alt="Revolt of 1857" loading="lazy" src="assets/modern-resistance.jpg"/></div><a href="#chapter-2">View details ↑</a></article><article class="card" id="chapter-3" data-year="1905"><div class="card-title"><span>3</span><h3>Nationalist Awakening</h3></div><div class="date">1885–1919</div><div class="card-content"><p>The founding of the Indian National Congress and the Swadeshi movement helped build a nationwide political movement.</p><img alt="Nationalist Awakening" loading="lazy" src="assets/modern-hero.jpg"/></div><a href="#chapter-3">View details ↑</a></article><article class="card" id="chapter-4" data-year="1920"><div class="card-title"><span>4</span><h3>Non-Cooperation &amp; Satyagraha</h3></div><div class="date">1920–1942</div><div class="card-content"><p>Mass campaigns of nonviolent resistance, including the Salt March, mobilised millions against colonial rule.</p><img alt="Non-Cooperation &amp; Satyagraha" loading="lazy" src="assets/modern-satyagraha.jpg"/></div><a href="#chapter-4">View details ↑</a></article><article class="card" id="chapter-5" data-year="1947"><div class="card-title"><span>5</span><h3>Quit India &amp; Independence</h3></div><div class="date">1942–1947</div><div class="card-content"><p>The Quit India movement and the final years of colonial rule culminated in independence in August 1947.</p><img alt="Quit India &amp; Independence" loading="lazy" src="assets/modern-gandhi.jpg"/></div><a href="#chapter-5">View details ↑</a></article><article class="card" id="chapter-6" data-year="1950"><div class="card-title"><span>6</span><h3>Constitution &amp; Republic</h3></div><div class="date">1947–1950</div><div class="card-content"><p>India adopted its Constitution on 26 November 1949 and became a republic on 26 January 1950.</p><img alt="Constitution &amp; Republic" loading="lazy" src="assets/Modern India.png"/></div><a href="#chapter-6">View details ↑</a></article><article class="card" id="chapter-7" data-year="1969"><div class="card-title"><span>7</span><h3>Green Revolution &amp; Space Research</h3></div><div class="date">1960s–1980s</div><div class="card-content"><p>Agricultural innovations raised food production, while ISRO, founded in 1969, advanced India’s space programme.</p><img alt="Green Revolution &amp; Space Research" loading="lazy" src="assets/modern-green.jpg"/></div><a href="#chapter-7">View details ↑</a></article><article class="card" id="chapter-8" data-year="1991"><div class="card-title"><span>8</span><h3>Economic Liberalisation</h3></div><div class="date">1991 onwards</div><div class="card-content"><p>Economic reforms reduced many restrictions on trade and investment, reshaping industry and global integration.</p><img alt="Economic Liberalisation" loading="lazy" src="assets/modern-hero.jpg"/></div><a href="#chapter-8">View details ↑</a></article><article class="card" id="chapter-9" data-year="2015"><div class="card-title"><span>9</span><h3>Digital India</h3></div><div class="date">2000s–2020s</div><div class="card-content"><p>Growth in software, telecommunications and digital public infrastructure transformed services and payments.</p><img alt="Digital India" loading="lazy" src="assets/Modern India.png"/></div><a href="#chapter-9">View details ↑</a></article><article class="card" id="chapter-10" data-year="2023"><div class="card-title"><span>10</span><h3>Space Exploration &amp; New Horizons</h3></div><div class="date">2010s–2020s</div><div class="card-content"><p>Chandrayaan-3 achieved a successful soft landing near the Moon’s south polar region in August 2023.</p><img alt="Space Exploration &amp; New Horizons" loading="lazy" src="assets/modern-lunar.jpg"/></div><a href="#chapter-10">View details ↑</a></article></section>
+</div>
+<script src="modern-timeline.js" defer></script><script src="modern-interactions.js" defer></script>
+</body>
+</html>
