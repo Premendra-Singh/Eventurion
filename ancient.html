@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eventurion — Ancient India</title>
+    <link rel="stylesheet" href="ancient.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet>
+</head><body><div class=" page">
+    <nav class="era-nav"><a href="index.html">Home</a><a class="active" href="ancient.html">Ancient India</a><a
+            href="medieval.html">Medieval India</a><a href="modern.html">Modern India</a><a
+            href="feedback.html">Feedback</a></nav>
+    <header class="hero">
+        <div class="hero-copy">
+            <div class="brand"><a href="index.html">EVENTURION</a></div>
+            <h1>Ancient India</h1>
+            <h2>Timeline of Ancient India</h2>
+        </div><img class="hero-art" src="assets/ancient-stupa.jpg" alt="Sanchi Stupa">
+    </header>
+    <section class="timeline-section tl-bar" id="tl-bar" aria-label="Timeline of Ancient India">
+        <div class="tl-head">
+            <h2>Timeline of Ancient India <span>2600 BCE – 700 CE</span></h2>
+            <div class="tl-controls"><button class="tl-btn" id="tl-prev" type="button"
+                    aria-label="Previous event">&#8249;</button><button class="tl-btn tl-play" id="tl-play"
+                    type="button" aria-pressed="false">&#9654; Play</button><button class="tl-btn" id="tl-next"
+                    type="button" aria-label="Next event">&#8250;</button></div>
+        </div>
+        <div class="tl-stage" id="tl-stage">
+            <div class="tl-bubble" id="tl-bubble"><time id="tl-year"></time><b id="tl-title"></b></div>
+            <div class="tl-bands"></div>
+            <div class="tl-line" id="tl-line">
+                <div class="tl-fill" id="tl-fill"></div><button class="tl-dot" type="button" data-year="-2600"
+                    data-chapter="1" data-title="Indus Valley cities flourish"
+                    title="2600 BCE · Indus Valley cities flourish"
+                    aria-label="2600 BCE: Indus Valley cities flourish"></button><button class="tl-dot" type="button"
+                    data-year="-1900" data-chapter="1" data-title="Indus Valley urban decline"
+                    title="1900 BCE · Indus Valley urban decline"
+                    aria-label="1900 BCE: Indus Valley urban decline"></button><button class="tl-dot" type="button"
+                    data-year="-600" data-chapter="2" data-title="Mahajanapadas emerge"
+                    title="600 BCE · Mahajanapadas emerge" aria-label="600 BCE: Mahajanapadas emerge"></button><button
+                    class="tl-dot" type="button" data-year="-345" data-chapter="3" data-title="Nanda Empire rises"
+                    title="345 BCE · Nanda Empire rises" aria-label="345 BCE: Nanda Empire rises"></button><button
+                    class="tl-dot" type="button" data-year="-322" data-chapter="4" data-title="Maurya Empire founded"
+                    title="322 BCE · Maurya Empire founded" aria-label="322 BCE: Maurya Empire founded"></button><button
+                    class="tl-dot" type="button" data-year="-261" data-chapter="4" data-title="Kalinga War under Ashoka"
+                    title="261 BCE · Kalinga War under Ashoka"
+                    aria-label="261 BCE: Kalinga War under Ashoka"></button><button class="tl-dot" type="button"
+                    data-year="-185" data-chapter="5" data-title="Shunga Dynasty begins"
+                    title="185 BCE · Shunga Dynasty begins" aria-label="185 BCE: Shunga Dynasty begins"></button><button
+                    class="tl-dot" type="button" data-year="-100" data-chapter="6" data-title="Satavahana power expands"
+                    title="100 BCE · Satavahana power expands"
+                    aria-label="100 BCE: Satavahana power expands"></button><button class="tl-dot" type="button"
+                    data-year="78" data-chapter="7" data-title="Kushan era begins" title="78 CE · Kushan era begins"
+                    aria-label="78 CE: Kushan era begins"></button><button class="tl-dot" type="button" data-year="320"
+                    data-chapter="8" data-title="Gupta Empire rises" title="320 CE · Gupta Empire rises"
+                    aria-label="320 CE: Gupta Empire rises"></button><button class="tl-dot" type="button"
+                    data-year="400" data-chapter="8" data-title="Gupta cultural flourishing"
+                    title="400 CE · Gupta cultural flourishing"
+                    aria-label="400 CE: Gupta cultural flourishing"></button><button class="tl-dot" type="button"
+                    data-year="606" data-chapter="9" data-title="Harshavardhana becomes ruler"
+                    title="606 CE · Harshavardhana becomes ruler"
+                    aria-label="606 CE: Harshavardhana becomes ruler"></button><button class="tl-dot" type="button"
+                    data-year="647" data-chapter="9" data-title="Harshavardhana's reign ends"
+                    title="647 CE · Harshavardhana's reign ends"
+                    aria-label="647 CE: Harshavardhana's reign ends"></button>
+                <div class="tl-playhead" id="tl-playhead" tabindex="0" role="slider" aria-label="Timeline year"
+                    aria-valuemin="-2600" aria-valuemax="700"></div>
+            </div>
+            <div class="tl-scale" id="tl-scale"></div>
+        </div>
+    </section>
+    <div class="rule"></div>
+    <section class="cards">
+        <article class="card" id="chapter-1" data-year="-2200">
+            <div class="card-title"><span>1</span>
+                <h3>Indus Valley<br>Civilisation</h3>
+            </div>
+            <div class="date">c. 2600–1900 BCE</div>
+            <div class="card-content">
+                <p>One of the world's earliest urban civilizations, known for advanced city planning, drainage systems
+                    and craft production.</p><img src="assets/ancient-indus.jpg" alt="Indus Valley Civilisation">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-2" data-year="-450">
+            <div class="card-title"><span>2</span>
+                <h3>16<br>Mahajanapadas</h3>
+            </div>
+            <div class="date">c. 600–345 BCE</div>
+            <div class="card-content">
+                <p>Sixteen major kingdoms and republics that shaped the political landscape of early historic India.</p>
+                <img src="assets/ancient-mahajanapadas.jpg" alt="16 Mahajanapadas">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-3" data-year="-330">
+            <div class="card-title"><span>3</span>
+                <h3>Nanda Empire</h3>
+            </div>
+            <div class="date">c. 345–322 BCE</div>
+            <div class="card-content">
+                <p>Ruled Magadha before the Mauryas, known for their wealth, powerful army and vast territorial control.
+                </p><img src="assets/Rectangle 51.png" alt="Nanda Empire">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-4" data-year="-250">
+            <div class="card-title"><span>4</span>
+                <h3>Maurya Empire</h3>
+            </div>
+            <div class="date">c. 322–185 BCE</div>
+            <div class="card-content">
+                <p>One of the largest empires in ancient India, it unified much of the subcontinent under centralized
+                    rule.</p><img src="assets/ancient-maurya.jpg" alt="Maurya Empire">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-5" data-year="-120">
+            <div class="card-title"><span>5</span>
+                <h3>Shunga Dynasty</h3>
+            </div>
+            <div class="date">c. 185–73 BCE</div>
+            <div class="card-content">
+                <p>Succeeded the Mauryas in northern India and played a key role in the cultural and political
+                    transition of the time.</p><img src="assets/Rectangle 56.png" alt="Shunga Dynasty">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-6" data-year="100">
+            <div class="card-title"><span>6</span>
+                <h3>Satavahana<br>Dynasty</h3>
+            </div>
+            <div class="date">c. 1st Century BCE – 3rd Century CE</div>
+            <div class="card-content">
+                <p>A major power in the Deccan, known for trade, cultural development and connecting northern and
+                    southern India.</p><img src="assets/Rectangle 67.png" alt="Satavahana Dynasty">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-7" data-year="150">
+            <div class="card-title"><span>7</span>
+                <h3>Kushan Empire</h3>
+            </div>
+            <div class="date">c. 1st Century BCE – 3rd Century CE</div>
+            <div class="card-content">
+                <p>A powerful empire that controlled parts of Central Asia, Afghanistan and northern India. The Kushans
+                    played an important role in long-distance trade and the spread of Buddhism across Central and South
+                    Asia.</p><img src="assets/Rectangle 64.png" alt="Kushan Empire">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-8" data-year="400">
+            <div class="card-title"><span>8</span>
+                <h3>Gupta Empire</h3>
+            </div>
+            <div class="date">c. 3rd–6th Century CE</div>
+            <div class="card-content">
+                <p>A golden age in Indian history, marked by significant achievements in science, mathematics,
+                    literature and art.</p><img src="assets/Rectangle 65.png" alt="Gupta Empire">
+            </div><a href="index.html">View details →</a>
+        </article>
+        <article class="card" id="chapter-9" data-year="620">
+            <div class="card-title"><span>9</span>
+                <h3>Harshavardhana</h3>
+            </div>
+            <div class="date">c. 606–647 CE</div>
+            <div class="card-content">
+                <p>One of the most prominent rulers of 7th-century northern India, Harshavardhana unified much of
+                    northern India and supported learning, culture and religious institutions.</p><img
+                    src="assets/Rectangle 66.png" alt="Harshavardhana">
+            </div><a href="index.html">View details →</a>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="footer-nav"><a href="index.html">← Home</a><a href="medieval.html">Medieval India →</a></div>
+    </footer>
+    </div>
+    <script src="ancient-timeline.js"></script>
+    <script src="ancient-interactions.js" defer></script>
+    </body>
+
+</html>
